@@ -4,9 +4,10 @@ mongooseConnection.connect("127.0.0.1:27017/shh_magical_secret_db");
 
 var Unicorn = new mongooseConnection.Schema({
   magical_power: String,
-  colors: [],
+  colors: [Colors],
   wings_type: String,
-  alicorn: [Vegetable]
+  alicorn: [Vegetable],
+  nemesis: String
 });
 
 var Vegetable = new mongooseConnection.Schema({
@@ -18,3 +19,9 @@ var Colors = new mongooseConnection.Schema({
   color: String,
   percentage: String
 });
+
+mongooseConnection.model("Unicorn", Unicorn);
+mongooseConnection.model("Vegetable", Vegetable);
+mongooseConnection.model("Colors", Colors);
+
+module.exports = mongooseConnection;
