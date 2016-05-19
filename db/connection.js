@@ -6,7 +6,8 @@ var Unicorn = new mongooseConnection.Schema({
   magical_power: String,
   colors: [],
   wings_type: String,
-  alicorn: [Vegetable]
+  alicorn: [Vegetable],
+  nemesis: String
 });
 
 var Vegetable = new mongooseConnection.Schema({
@@ -18,3 +19,9 @@ var Colors = new mongooseConnection.Schema({
   color: String,
   percentage: String
 });
+
+mongooseConnection.model("Unicorn", Unicorn);
+mongooseConnection.model("Vegetable", Vegetable);
+mongooseConnection.model("Colors", Colors);
+
+module.exports = mongooseConnection
