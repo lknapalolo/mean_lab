@@ -7,7 +7,6 @@ var app = express();
 
 var Unicorn = mongoose.model("Unicorn");
 var Vegetable = mongoose.model("Vegetable");
-var Color = mongoose.model("Colors");
 
 app.use("/assets", express.static("public"))
 app.set("port", process.env.PORT || 7777);
