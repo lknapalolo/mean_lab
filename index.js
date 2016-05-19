@@ -1,6 +1,6 @@
 var mongoose        = require("mongoose");
 var express         = require("express");
-var hbs             = require("exoress-handlebars");
+var hbs             = require("express-handlebars");
 
 
 var app = express();
@@ -17,3 +17,6 @@ app.engine(".hbs", hbs({
   layoutsDir:     "views/",
   defaultLayout:  "layout-main"
 }));
+
+app.use("/", express.static(""));
+app.use(parser.urlencoded({extended: true}));
