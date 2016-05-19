@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#grad1 {
-    font-size: 1em;
-    background: -webkit-linear-gradient(left top,
-      {{#each unicorns as |unicorn index|}}
-        {{#each unicorn.colors as |color index|}}
-          {{color.color}},
-        {{/each}}
-      {{/each}}
-      #000000);
-    background: linear-gradient(to bottom right,
-      {{#each unicorns as |unicorn index|}}
-        {{#each unicorn.colors as |color index|}}
-          {{color.color}},
-          {{/each}}
-      {{/each}}
-      #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
-</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-resource.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
@@ -60,6 +37,7 @@
                                       \~\
                                        ~~
 </pre>
+<a data-ui-sref="index">Unicorn Grove</a>
 <main data-ui-view>
 </main>
 </body>

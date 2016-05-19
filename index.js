@@ -18,18 +18,16 @@ app.engine(".hbs", hbs({
   defaultLayout:  "layout-main"
 }));
 
-app.get("/unicorngrove", function(req, res){
-  Unicorn.find({}).then(function(unicorn_db){
-  res.render("layout-main", {
-      unicorns: unicorn_db,
-      layout: false
-    })
+
+app.get("/api/unicorns/:name", function(req, res){
+  Unicorn.findOneAndUpdate(req.params, req.body, {new:true}).then(function(unicorn){
+    res.json(unicorn)
   })
 })
 
 app.get("/api/unicorns", function(req, res){
-  Unicorn.find().then(function(unicorn_db){
-    res.json(unicorn_db)
+  Unicorn.find().then(function(unicorns_db){
+    res.json(unicorns_db)
   })
 })
 

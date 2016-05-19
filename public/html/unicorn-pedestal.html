@@ -1,0 +1,60 @@
+<style>
+#grad1 {
+    font-size: 1em;
+    background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#grad1 {
+  animation-name: pulse_animation;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;;
+}
+@keyframes pulse_animation {
+  0% {
+    background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px {{ShowVm.unicorn.coat.color1}};
+  }
+  25% {
+    background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}));
+    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px {{ShowVm.unicorn.coat.color2}};
+  }
+  50% {
+    background: -webkit-linear-gradient(left top,  {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}));
+    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px {{ShowVm.unicorn.coat.color3}};
+  }
+  75%{
+    background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}});
+    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px {{ShowVm.unicorn.coat.color4}};
+  }
+  100% {
+    background: -webkit-linear-gradient({{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}));
+    background: linear-gradient({{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}}, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px {{ShowVm.unicorn.coat.color5}};
+  }
+}
+}
+</style>
+
+
+<h1>{{ShowVm.unicorn.name}}</h1>
+<h2>{{ShowVm.unicorn.magical_power}}</h2>
+<h3>{{ShowVm.unicorn.wings_type}}</h3>
+<h3>{{ShowVm.unicorn.nemesis}}</h3>
+<h3 data-ng-repeat="alicorn in |ShowVm.unicorn.alicorn">{{alicorn.vegetable}}</h3>
