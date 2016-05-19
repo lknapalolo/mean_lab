@@ -1,0 +1,22 @@
+{
+  "name": "mean_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lknapalolo/mean_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lknapalolo/mean_lab/issues"
+  },
+  "homepage": "https://github.com/lknapalolo/mean_lab#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
