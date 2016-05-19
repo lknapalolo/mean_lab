@@ -1,0 +1,150 @@
+[
+  {
+    "name":"Lolo",
+    "magical_power":"Vegan Superpowers feat. CSS",
+    "colors":[
+      {
+        "color":"#cc0066",
+        "percentage":"0"
+      },
+      {
+        "color":"#ff4da6",
+        "percentage":"25"
+      },
+      {
+        "color":"#ff99cc",
+        "percentage":"50"
+      },
+      {
+        "color":"#ffe6f2",
+        "percentage":"75"
+      }
+    ],
+    "wings_type":"Glitter Sparkles",
+    "alicorn":[
+      {
+        "name":"Carrot",
+        "flavor":"HOT AF"
+      },
+      {
+        "name":"Broccoli",
+        "flavor":"Delicious"
+      }
+    ],
+    "nemesis":"Carni Vore"
+  },
+  {
+    "name":"James Superchomper 9000",
+    "magical_power":"Famine and Hexcodes, also Hexes",
+    "colors":[
+      {
+        "color":"#000000",
+        "percentage":"0"
+      },
+      {
+        "color":"#000060",
+        "percentage":"20"
+      },
+      {
+        "color":"#330033",
+        "percentage":"40"
+      },
+      {
+        "color":"#00ff00",
+        "percentage":"60"
+      },
+      {
+        "color":"#330000",
+        "percentage":"80"
+      }
+    ],
+    "wings_type":"Higgs-Boson",
+    "alicorn":[
+      {
+        "name":"Kimchi",
+        "flavor":"Spicy AF"
+      },
+      {
+        "name":"Radish",
+        "flavor":"So Earth"
+      }
+    ],
+    "nemesis":"TIMEVOID.BOT"
+  },
+  {
+    "name":"Lolo",
+    "magical_power":"Vegan Superpowers",
+    "colors":[
+      {
+        "color":"#cc0066",
+        "percentage":"0"
+      },
+      {
+        "color":"#ff4da6",
+        "percentage":"25"
+      },
+      {
+        "color":"#ff99cc",
+        "percentage":"50"
+      },
+      {
+        "color":"#ffe6f2",
+        "percentage":"75"
+      }
+    ],
+    "wings_type":"Glitter Sparkles",
+    "alicorn":[
+      {
+        "name":"Carrot",
+        "flavor":"HOT AF"
+      },
+      {
+        "name":"Broccoli",
+        "flavor":"Delicious"
+      }
+    ],
+    "nemesis":"Carni Vore"
+  },
+  {
+    "name":"Hewity",
+    "magical_power":"Kindness",
+    "colors":[
+      {
+        "color":"#8747C2",
+        "percentage":"0"
+      },
+      {
+        "color":"#9a85d6",
+        "percentage":"16"
+      },
+      {
+        "color":"#be4fc4",
+        "percentage":"32"
+      },
+      {
+        "color":"#c6d788",
+        "percentage":"48"
+      },
+      {
+        "color":"#2f328e",
+        "percentage":"64"
+      },
+      {
+        "color":"#ebc2c2",
+        "percentage":"80"
+      },
+    ],
+    "wings_type":"Gemstones",
+    "alicorn":[
+      {
+        "name":"Spinach",
+        "flavor":"Healthy"
+      },
+      {
+        "name":"Eggplant",
+        "flavor":"Yummy"
+      }
+    ],
+    "nemesis":"Junk Food"
+  }
+]
