@@ -2,24 +2,13 @@
   {
     "name":"Lolo",
     "magical_power":"Vegan Superpowers feat. CSS",
-    "colors":[
-      {
-        "color":"#cc0066",
-        "percentage":"0"
-      },
-      {
-        "color":"#ff4da6",
-        "percentage":"25"
-      },
-      {
-        "color":"#ff99cc",
-        "percentage":"50"
-      },
-      {
-        "color":"#ffe6f2",
-        "percentage":"75"
-      }
-    ],
+    "coat":{
+        "color1":"#cc0066",
+        "color2":"#ff4da6",
+        "color3":"#ff99cc",
+        "color4":"#ffe6f2",
+        "color5":"#ffe6f2"
+    },
     "wings_type":"Glitter Sparkles",
     "alicorn":[
       {
@@ -33,31 +22,18 @@
     ],
     "nemesis":"Carni Vore"
   },
+
   {
     "name":"James Superchomper 9000",
     "magical_power":"Famine and Hexcodes, also Hexes",
-    "colors":[
+    "coat":
       {
-        "color":"#000000",
-        "percentage":"0"
+        "color1":"#000000",
+        "color2":"#000060",
+        "color3":"#330033",
+        "color4":"#00ff00",
+        "color5":"#330000"
       },
-      {
-        "color":"#000060",
-        "percentage":"20"
-      },
-      {
-        "color":"#330033",
-        "percentage":"40"
-      },
-      {
-        "color":"#00ff00",
-        "percentage":"60"
-      },
-      {
-        "color":"#330000",
-        "percentage":"80"
-      }
-    ],
     "wings_type":"Higgs-Boson",
     "alicorn":[
       {
@@ -71,35 +47,18 @@
     ],
     "nemesis":"TIMEVOID.BOT"
   },
+
   {
     "name":"Hewity",
     "magical_power":"Kindness",
-    "colors":[
+    "coat":
       {
-        "color":"#8747C2",
-        "percentage":"0"
+        "color1":"#9a85d6",
+        "color2":"#be4fc4",
+        "color3":"#c6d788",
+        "color4":"#2f328e",
+        "color5":"#ebc2c2"
       },
-      {
-        "color":"#9a85d6",
-        "percentage":"16"
-      },
-      {
-        "color":"#be4fc4",
-        "percentage":"32"
-      },
-      {
-        "color":"#c6d788",
-        "percentage":"48"
-      },
-      {
-        "color":"#2f328e",
-        "percentage":"64"
-      },
-      {
-        "color":"#ebc2c2",
-        "percentage":"80"
-      }
-    ],
     "wings_type":"Gemstones",
     "alicorn":[
       {
