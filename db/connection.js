@@ -3,6 +3,7 @@ var mongooseConnection = require("mongoose");
 mongooseConnection.connect("127.0.0.1:27017/shh_magical_secret_db");
 
 var Unicorn = new mongooseConnection.Schema({
+  name: String, 
   magical_power: String,
   colors: [Colors],
   wings_type: String,
