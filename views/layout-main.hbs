@@ -2,58 +2,35 @@
 <html>
 <head>
 <style>
-body{
-    background: black;
-}
 #grad1 {
     font-size: 1em;
-    background: -webkit-linear-gradient(left top, #cc0066, #ff4da6, #ff99cc, #ffe6f2));
-    background: linear-gradient(to bottom right, #cc0066, #ff4da6, #ff99cc, #ffe6f2);
+    background: -webkit-linear-gradient(left top,
+      {{#each unicorns as |unicorn index|}}
+        {{#each unicorn.colors as |color index|}}
+          {{color.color}},
+        {{/each}}
+      {{/each}}
+      #000000);
+    background: linear-gradient(to bottom right,
+      {{#each unicorns as |unicorn index|}}
+        {{#each unicorn.colors as |color index|}}
+          {{color.color}},
+          {{/each}}
+      {{/each}}
+      #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-#grad1 {
-  animation-name: pulse_animation;
-	animation-duration: 1000ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;;
-}
-@keyframes pulse_animation {
-  0% {
-    background: -webkit-linear-gradient(left top, #cc0066, #ff4da6, #ff99cc, #ffe6f2));
-    background: linear-gradient(to bottom right, #cc0066, #ff4da6, #ff99cc, #ffe6f2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px #cc0066;
-  }
-  25% {
-    background: -webkit-linear-gradient(left top, #ff4da6, #ff99cc, #ffe6f2, #cc0066));
-    background: linear-gradient(to bottom right, #ff4da6, #ff99cc, #ffe6f2, #cc0066);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px #ff4da6;
-  }
-  50% {
-    background: -webkit-linear-gradient(left top,  #ff99cc, #ffe6f2, #cc0066, #ff4da6));
-    background: linear-gradient(to bottom right, #ff99cc, #ffe6f2, #cc0066, #ff4da6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px #ff99cc;
-  }
-  100% {
-    background: -webkit-linear-gradient(#ffe6f2, #cc0066, #ff4da6, #ff99cc));
-    background: linear-gradient(#ffe6f2, #cc0066, #ff4da6, #ff99cc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px #ffe6f2;
-  }
-}
-}
-</style>
-</head>
-<body>
 
-<h3>Radial Gradient - Evenly Spaced Color Stops</h3>
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+<script src="/assets/app.js"></script>
+<base href="/" />
+</head>
+<body data-ng-app="SecretMagicApp">
 <pre id="grad1">
 
                                  ,|
@@ -83,8 +60,7 @@ body{
                                       \~\
                                        ~~
 </pre>
-
-<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
-
+<main data-ui-view>
+</main>
 </body>
 </html>

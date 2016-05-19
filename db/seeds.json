@@ -72,40 +72,6 @@
     "nemesis":"TIMEVOID.BOT"
   },
   {
-    "name":"Lolo",
-    "magical_power":"Vegan Superpowers",
-    "colors":[
-      {
-        "color":"#cc0066",
-        "percentage":"0"
-      },
-      {
-        "color":"#ff4da6",
-        "percentage":"25"
-      },
-      {
-        "color":"#ff99cc",
-        "percentage":"50"
-      },
-      {
-        "color":"#ffe6f2",
-        "percentage":"75"
-      }
-    ],
-    "wings_type":"Glitter Sparkles",
-    "alicorn":[
-      {
-        "name":"Carrot",
-        "flavor":"HOT AF"
-      },
-      {
-        "name":"Broccoli",
-        "flavor":"Delicious"
-      }
-    ],
-    "nemesis":"Carni Vore"
-  },
-  {
     "name":"Hewity",
     "magical_power":"Kindness",
     "colors":[
