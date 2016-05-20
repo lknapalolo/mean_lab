@@ -1,4 +1,8 @@
 <h1>What can Unicorns do for you?</h1>
+<li>
+  <input type="text" data-ng-model="IndexVm.newUnicorn.name"/>
+  <button data-ng-click="IndexVm.create()">Join our grove!</button>
+</li>
 <h2 data-ng-repeat="unicorn in IndexVm.unicorns">
-    <a data-ui-sref="show(unicorn)">{{unicorn.magical_power}}</a>
+    <a data-ui-sref="show(unicorn)">{{unicorn.name}}</a>
 </h2>
