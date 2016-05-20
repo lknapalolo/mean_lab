@@ -20,7 +20,7 @@ app.engine(".hbs", hbs({
 
 
 app.get("/api/unicorns/:name", function(req, res){
-  Unicorn.findOneAndUpdate(req.params, req.body, {new:true}).then(function(unicorn){
+  Unicorn.findOne(req.params).then(function(unicorn){
     res.json(unicorn)
   })
 })

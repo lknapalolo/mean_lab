@@ -7,12 +7,12 @@
     -webkit-text-fill-color: transparent;
 }
 #grad1 {
-  animation-name: pulse_animation;
+  animation-name: unicorn;
 	animation-duration: 1000ms;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;;
 }
-@keyframes pulse_animation {
+@keyframes unicorn {
   0% {
     background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
     background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
@@ -57,4 +57,4 @@
 <h2>{{ShowVm.unicorn.magical_power}}</h2>
 <h3>{{ShowVm.unicorn.wings_type}}</h3>
 <h3>{{ShowVm.unicorn.nemesis}}</h3>
-<h3 data-ng-repeat="alicorn in |ShowVm.unicorn.alicorn">{{alicorn.vegetable}}</h3>
+<h3 data-ng-repeat="a in ShowVm.unicorn.alicorn">{{a.flavor}} {{a.name}}</h3>
