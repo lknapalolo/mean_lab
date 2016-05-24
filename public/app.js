@@ -9,7 +9,7 @@
   .config(Router)
   .controller("Index", IndexCtrl)
   .controller("Show", ShowCtrl)
-  .factory("Unicorn", UnicornFactoryFarm)
+  .factory("Unicorn", UnicornFactoryFarm);
 
   Router.$inject = ["$stateProvider", "$locationProvider"];
   function Router($stateProvider, $locationProvider){
@@ -27,23 +27,36 @@
       controller: "Show",
       controllerAs: "ShowVm"
     })
+    .directive("unicornNewAgeBirthingCenter", unicornWaterBirth);
   }
 
-UnicornFactoryFarm.$inject = ["$resource"];
-function UnicornFactoryFarm($resource){
-  var SpecialMagicalUnicornRainbowGlitterConveyorBeltLisaFrank = $resource("/api/unicorns/:name", {}, {
-    update: {method: "PUT"}
-  });
-  return SpecialMagicalUnicornRainbowGlitterConveyorBeltLisaFrank
-}
+  function unicornWaterBirth(){
+    return {
+      templateUrl: "unicorn-new-age-birthing-center.html"
+    };
+  }
 
-IndexCtrl.$inject = ["Unicorn", "$stateParams", "$state"]
+  UnicornFactoryFarm.$inject = ["$resource"];
+  function UnicornFactoryFarm($resource){
+    var SpecialMagicalUnicornRainbowGlitterConveyorBeltLisaFrank = $resource("/api/unicorns/:name", {}, {
+      update: {method: "PUT"}
+    });
+    return SpecialMagicalUnicornRainbowGlitterConveyorBeltLisaFrank;
+  }
+
+  IndexCtrl.$inject = ["Unicorn", "$stateParams", "$state"];
   function IndexCtrl(Unicorn, $stateParams, state){
     var vm = this;
     vm.unicorns = Unicorn.query();
+
+    vm.unigenesis = function(){
+      Unicorn.save(vm.babyUnicorn, function(tiny_corn){
+        vm.unicorns.push(tiny_corn);
+      });
+    };
   }
 
-ShowCtrl.$inject = ["Unicorn", "$stateParams", "$state"]
+  ShowCtrl.$inject = ["Unicorn", "$stateParams", "$state"];
   function ShowCtrl(Unicorn, $stateParams, $state){
     var vm = this;
     vm.unicorn = Unicorn.get($stateParams);
