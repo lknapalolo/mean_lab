@@ -1,16 +1,16 @@
 <style>
 #grad1 {
-    font-size: 1em;
-    background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
-    background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 1em;
+  background: -webkit-linear-gradient(left top, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+  background: linear-gradient(to bottom right, {{ShowVm.unicorn.coat.color1}}, {{ShowVm.unicorn.coat.color2}}, {{ShowVm.unicorn.coat.color3}}, {{ShowVm.unicorn.coat.color4}}, {{ShowVm.unicorn.coat.color5}});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #grad1 {
   animation-name: unicorn;
-	animation-duration: 1000ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;;
 }
 @keyframes unicorn {
   0% {
@@ -49,12 +49,13 @@
     text-shadow: 2px 2px {{ShowVm.unicorn.coat.color5}};
   }
 }
-}
 </style>
 
 
-<h1>{{ShowVm.unicorn.name}}</h1>
-<h2>{{ShowVm.unicorn.magical_power}}</h2>
-<h3>{{ShowVm.unicorn.wings_type}}</h3>
-<h3>{{ShowVm.unicorn.nemesis}}</h3>
+<h1>
+  {{ShowVm.unicorn.name}}
+</h1>
+<h2>Magical Powers: {{ShowVm.unicorn.magical_power}}</h2>
+<h3>Wings of {{ShowVm.unicorn.wings_type}}</h3>
+<h3>Nemesis: {{ShowVm.unicorn.nemesis}}</h3>
 <h3 data-ng-repeat="a in ShowVm.unicorn.alicorn">{{a.flavor}} {{a.name}}</h3>
