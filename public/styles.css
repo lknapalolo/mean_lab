@@ -1,9 +1,12 @@
 body{
   background-color: black;
-  color:white
+  color:white;
+  padding:2em;
+}
+p.rainbow{
+  font-size:2em;
 }
 a, a:visited{
-  font-size:2em;
   color:white;
   font-weight:bold;
 }
@@ -25,4 +28,30 @@ a:hover, .rainbow:hover {
   80% {text-shadow:2px 2px purple;}
   90% {text-shadow:2px 2px violet;}
   100% {text-shadow:2px 2px pink;}
+}
+input[type="text"]{
+  display:block;
+  margin: 0.5em;
+  font-size:1.5em;
+  border: 0px solid transparent;
+}
+input[type="color"]{
+  display:inline;
+  margin-right: 1em;
+}
+button{
+  display:block;
+  background-color:black;
+  border: 2px solid white;
+  color:white;
+  font-size:2em;
+  margin-right:0.5em;
+  margin-top: 1em;
+}
+button:hover{
+  background-color: white;
+  color: black;
+}
+h1, h2, h3{
+  font-size: 2.5em;
 }

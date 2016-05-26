@@ -32,7 +32,7 @@
 
   function unicornWaterBirth(){
     return {
-      templateUrl: "unicorn-new-age-birthing-center.html"
+      templateUrl: "/assets/html/unicorn-new-age-birthing-center.html"
     };
   }
 
