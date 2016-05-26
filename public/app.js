@@ -9,7 +9,8 @@
   .config(Router)
   .controller("Index", IndexCtrl)
   .controller("Show", ShowCtrl)
-  .factory("Unicorn", UnicornFactoryFarm);
+  .factory("Unicorn", UnicornFactoryFarm)
+  .directive("unicornNewAgeBirthingCenter", unicornWaterBirth);
 
   Router.$inject = ["$stateProvider", "$locationProvider"];
   function Router($stateProvider, $locationProvider){
@@ -26,8 +27,7 @@
       templateUrl: "/assets/html/unicorn-pedestal.html",
       controller: "Show",
       controllerAs: "ShowVm"
-    })
-    .directive("unicornNewAgeBirthingCenter", unicornWaterBirth);
+    });
   }
 
   function unicornWaterBirth(){
